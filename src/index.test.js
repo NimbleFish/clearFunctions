@@ -1,13 +1,13 @@
-const index = import checkHealth;
+import {checkHealth} from './index.js';
 
 test('strongHealth', () => {
-  expect(checkHealth({ 'autotest', 80 })).toBe('healthy');
+  expect(checkHealth({ 'name' : 'autotest', 'health' : 80 })).toBe('healthy');
 });
 
 test('health', () => {
-  expect(checkHealth({ 'autotest', 30 })).toBe('wounded');
+  expect(checkHealth({ 'name' : 'autotest', 'health' : 30 })).toBe('wounded');
 });
 
 test('lowHealth', () => {
-  expect(checkHealth({ 'autotest', 10 })).toBe('critical');
+  expect(checkHealth({ 'name' : 'autotest', 'health' : 10 })).toBe('critical');
 });
