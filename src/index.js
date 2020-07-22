@@ -7,3 +7,5 @@ function checkHealth({ name, health }) {
     return 'critical';
   }
 }
+
+export checkHealth;
