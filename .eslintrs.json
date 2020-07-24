@@ -6,6 +6,7 @@
      "jest": true
   },
   "parser": "babel-eslint",
+  "parserOptions": { "sourceType": "module" },
   "rules": {
     "no-restricted-syntax": [
       "error",
